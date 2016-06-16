@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="keywords" content="WebRTC" />
+        <meta name="description" content="WebRTC c" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+        <title>WebRTC VideChat </title>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+        <script src="js/materialize.min.js"></script>
+        <script src='js/lib/adapter.js'></script>
+    </head>
+    <body>
+        
+         <!-- Navbar code -->
+         <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"> <img src="/images/webrtc-logo.png" width="32px" height="32px" /> WebRTC VideoChat Demo </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <!--  <li><a href="sass.html">About</a></li>
+                    <li><a href="collapsible.html">How to run</a></li> -->
+                </ul>
+            </div>
+         </nav>
+         <!-- Video element -->
+         <div class="row">
+            <div class="col s12 m5">
+               <div class="card-panel teal" align="center">
+                   <video id="localVideo" autoplay muted style="width:320px;height:240px"></video>
+               </div>
+            </div>
+
+            <div class="col s12 m5">
+               <div class="card-panel teal" align="center">
+                  <video id="remoteVideo" autoplay muted style="width:320px;height:240px"></video>
+               </div>
+            </div>
+   
+</div>
+
+<!-- All button code -->
+<div align="center">
+    <button id="startButton">Start</button>
+    <button id="callButton">Call</button>
+    <button id="hangupButton">Hang Up</button>
+</div>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Santosh Shingare | cherishsantosh@gmail.com | 2016 
+        </div>
+    </div>
+</footer>
+<script src='js/webrtc.js'></script>
+</body>
+</html>
